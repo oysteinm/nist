@@ -1,0 +1,38 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Lanczos 2 (Lanczos2.dat)
+================================================================================================
+Difficulty          : average
+Observations (N)    : 24
+Parameters (p)      : 6
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             9.625102993915666e-02     9.625102993900000e-02     11.8
+b2             1.005733284861100e+00     1.005733284900000e+00     10.4
+b3             8.642468905557499e-01     8.642468905600000e-01     11.3
+b4             3.007828391491463e+00     3.007828391500000e+00     11.5
+b5             1.552901687871524e+00     1.552901687900000e+00     10.7
+b6             5.002879809984568e+00     5.002879810000000e+00     11.5
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             6.677057547349305e-04     6.677057547700000e-04     10.3
+b2             3.398964617440962e-03     3.398964617600000e-03     10.3
+b3             1.718584668415469e-03     1.718584668500000e-03     10.3
+b4             4.170700585430249e-03     4.170700585600000e-03     10.4
+b5             2.374438141560167e-03     2.374438141700000e-03     10.2
+b6             1.395878728362142e-03     1.395878728400000e-03     10.6
+
+Residual Sum of Squares (RSS):
+  Python Computed : 2.229942812284216e-11
+  NIST Certified  : 2.229942812500000e-11
+  LRE (RSS)       : 10.0
+
+Summary Min LRE   : Coef. = 10.4, S.E. = 10.2, RSS = 10.0
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    7.1 S.E.=    4.5 RSS=    9.9
+  trf_3pt_fd            : Coef.=    9.2 S.E.=    7.4 RSS=   10.1
+  mpmath_50digit        : Coef.=   10.4 S.E.=   10.8 RSS=   11.4

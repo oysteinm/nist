@@ -1,0 +1,38 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Lanczos 3 (Lanczos3.dat)
+================================================================================================
+Difficulty          : lower
+Observations (N)    : 24
+Parameters (p)      : 6
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             8.681641548960678e-02     8.681641497700000e-02      8.2
+b2             9.549810179332033e-01     9.549810150500000e-01      8.5
+b3             8.440077758381870e-01     8.440077746300000e-01      8.8
+b4             2.951595186392186e+00     2.951595183200000e+00      9.0
+b5             1.582568588424539e+00     1.582568590100000e+00      9.0
+b6             4.986356509409537e+00     4.986356508400000e+00      9.7
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             1.719790890024962e-02     1.719790885900000e-02      8.6
+b2             9.704162413586916e-02     9.704162447500000e-02      8.5
+b3             4.148866353004880e-02     4.148866328200000e-02      8.2
+b4             1.076631252902466e-01     1.076631250600000e-01      8.7
+b5             5.837157656941865e-02     5.837157628100000e-02      8.3
+b6             3.443640320050283e-02     3.443640303500000e-02      8.3
+
+Residual Sum of Squares (RSS):
+  Python Computed : 1.611719359355996e-08
+  NIST Certified  : 1.611719359400000e-08
+  LRE (RSS)       : 10.6
+
+Summary Min LRE   : Coef. = 8.2, S.E. = 8.2, RSS = 10.6
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    5.7 S.E.=    4.3 RSS=   10.7
+  trf_3pt_fd            : Coef.=    8.9 S.E.=    7.7 RSS=   10.6
+  mpmath_50digit        : Coef.=   10.5 S.E.=   11.2 RSS=   10.6

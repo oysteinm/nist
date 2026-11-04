@@ -1,0 +1,30 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Misra 1d (Misra1d.dat)
+================================================================================================
+Difficulty          : average
+Observations (N)    : 14
+Parameters (p)      : 2
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             4.373697075415902e+02     4.373697075400000e+02     11.4
+b2             3.022732444886785e-04     3.022732444900000e-04     11.4
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             3.648917434553545e+00     3.648917434500000e+00     10.8
+b2             2.933435447922366e-06     2.933435447900000e-06     11.1
+
+Residual Sum of Squares (RSS):
+  Python Computed : 5.641929528264332e-02
+  NIST Certified  : 5.641929528300000e-02
+  LRE (RSS)       : 11.2
+
+Summary Min LRE   : Coef. = 11.4, S.E. = 10.8, RSS = 11.2
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    7.2 S.E.=    4.4 RSS=   11.5
+  trf_3pt_fd            : Coef.=    6.5 S.E.=    4.0 RSS=   10.1
+  mpmath_50digit        : Coef.=   12.6 S.E.=   11.1 RSS=   11.2

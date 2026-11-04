@@ -1,0 +1,33 @@
+NIST StRD Certification Log — Linear Regression: Pontius (Pontius.dat)
+================================================================================================
+Difficulty          : lower
+Observations (N)    : 40
+Parameters (p)      : 3 (Intercept=Yes)
+Condition Number    : 1.423028e+13
+
+Primary Run — Coefficients (Column-Pivoted QR, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+B0             6.735657894733345e-04     6.735657894736840e-04     12.3
+B1             7.320591604010027e-07     7.320591604010030e-07     15.0
+B2            -3.160818713450253e-15    -3.160818713450290e-15     13.9
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+B0             1.079386120330744e-04     1.079386120330770e-04     13.6
+B1             1.578173999816549e-10     1.578173999816590e-10     13.6
+B2             4.866528499920243e-17     4.866528499920360e-17     13.6
+
+Residual Sum of Squares (RSS):
+  Python Computed : 1.557617687969850e-06
+  NIST Certified  : 1.557617687969920e-06
+  LRE (RSS)       : 13.3
+
+Summary Min LRE   : Coef. = 12.3, S.E. = 13.6, RSS = 13.3
+
+Additional Solvers & Extended Precision Comparison (Min LRE):
+  statsmodels_qr        : Coef.= 12.4  S.E.= 13.8  RSS= 13.6
+  statsmodels_pinv      : Coef.=  6.2  S.E.=  9.2  RSS= 11.5
+  normal_equations      : Coef.= 11.2  S.E.= 13.7  RSS= 13.4
+  mpmath_50digit        : Coef.= 15.0  S.E.= 14.7  RSS= 14.5

@@ -1,0 +1,34 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Ratkowsky 3 (Rat43.dat)
+================================================================================================
+Difficulty          : higher
+Observations (N)    : 15
+Parameters (p)      : 4
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             6.996415127306888e+02     6.996415127000000e+02     10.4
+b2             5.277125267328940e+00     5.277125302500000e+00      8.2
+b3             7.596293805593763e-01     7.596293832900000e-01      8.4
+b4             1.279248372676318e+00     1.279248385900000e+00      8.0
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             1.630229783867697e+01     1.630229781700000e+01      8.9
+b2             2.082873575093610e+00     2.082873582900000e+00      8.4
+b3             1.956612333882211e-01     1.956612345100000e-01      8.2
+b4             6.876193597082310e-01     6.876193638500000e-01      8.2
+
+Residual Sum of Squares (RSS):
+  Python Computed : 8.786404907963128e+03
+  NIST Certified  : 8.786404908000000e+03
+  LRE (RSS)       : 11.4
+
+Summary Min LRE   : Coef. = 8.0, S.E. = 8.2, RSS = 11.4
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    7.4 S.E.=    6.4 RSS=   11.4
+  trf_3pt_fd            : Coef.=    8.5 S.E.=    8.6 RSS=   11.4
+  mpmath_50digit        : Coef.=   11.0 S.E.=   10.7 RSS=   11.4

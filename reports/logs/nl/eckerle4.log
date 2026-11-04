@@ -1,0 +1,32 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Eckerle4 (Eckerle4.dat)
+================================================================================================
+Difficulty          : higher
+Observations (N)    : 35
+Parameters (p)      : 3
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             1.554382717592111e+00     1.554382717800000e+00      9.9
+b2             4.088832174578605e+00     4.088832175400000e+00      9.7
+b3             4.515412184367627e+02     4.515412184400000e+02     11.1
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             1.540805116190180e-02     1.540805116300000e-02     10.1
+b2             4.680302074364113e-02     4.680302075300000e-02      9.7
+b3             4.680051880678070e-02     4.680051881600000e-02      9.7
+
+Residual Sum of Squares (RSS):
+  Python Computed : 1.463588748727471e-03
+  NIST Certified  : 1.463588748700000e-03
+  LRE (RSS)       : 10.7
+
+Summary Min LRE   : Coef. = 9.7, S.E. = 9.7, RSS = 10.7
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    9.6 S.E.=    7.8 RSS=   10.7
+  trf_3pt_fd            : Coef.=    9.3 S.E.=    6.9 RSS=   10.7
+  mpmath_50digit        : Coef.=   10.5 S.E.=   10.5 RSS=   10.7

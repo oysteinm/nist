@@ -1,0 +1,31 @@
+NIST StRD Certification Log — Linear Regression: Norris (Norris.dat)
+================================================================================================
+Difficulty          : lower
+Observations (N)    : 36
+Parameters (p)      : 2 (Intercept=Yes)
+Condition Number    : 8.552233e+02
+
+Primary Run — Coefficients (Column-Pivoted QR, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+B0            -2.623230737740116e-01    -2.623230737740290e-01     13.2
+B1             1.002116818020454e+00     1.002116818020450e+00     14.4
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+B0             2.328182343011551e-01     2.328182343011520e-01     13.9
+B1             4.297968481999418e-04     4.297968481999370e-04     14.0
+
+Residual Sum of Squares (RSS):
+  Python Computed : 2.661739852942295e+01
+  NIST Certified  : 2.661739852942240e+01
+  LRE (RSS)       : 13.7
+
+Summary Min LRE   : Coef. = 13.2, S.E. = 13.9, RSS = 13.7
+
+Additional Solvers & Extended Precision Comparison (Min LRE):
+  statsmodels_qr        : Coef.= 13.3  S.E.= 13.8  RSS= 13.6
+  statsmodels_pinv      : Coef.= 12.8  S.E.= 13.6  RSS= 13.3
+  normal_equations      : Coef.= 12.1  S.E.= 13.8  RSS= 13.5
+  mpmath_50digit        : Coef.= 14.4  S.E.= 14.7  RSS= 14.8

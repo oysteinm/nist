@@ -1,0 +1,17 @@
+NIST StRD Certification Log — Univariate Summary Statistics: NumAcc-3 (NumAcc3.dat)
+========================================================================================
+Difficulty       : average
+Observations (N) : 1001
+
+Primary Run (float64 numpy/statsmodels):
+Statistic                             Python Computed           NIST Certified      LRE
+----------------------------------------------------------------------------------------
+Sample Mean                     1.000000200000000e+06    1.000000200000000e+06     15.0
+Sample Std. Dev. (N-1)          1.000000000349246e-01    1.000000000000000e-01      9.5
+Lag-1 Autocorrelation r(1)     -9.989999999988338e-01   -9.990000000000000e-01     11.9
+----------------------------------------------------------------------------------------
+
+Additional Methods Comparison (LRE):
+  onepass_float64       : mean= 15.0  S.D.=  1.9  r(1)=  1.6
+  longdouble_80bit      : mean= 15.0  S.D.= 13.2  r(1)= 15.0
+  decimal_50digit       : mean= 15.0  S.D.= 15.0  r(1)= 15.0

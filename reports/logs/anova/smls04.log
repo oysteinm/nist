@@ -1,0 +1,20 @@
+NIST StRD Certification Log — One-Way ANOVA: Simon-Lesage 4 (SmLs04)
+========================================================================================
+Difficulty       : average
+Observations (N) : 189 (df_between=8, df_within=180)
+Scaled x10       : No
+
+Statistic                         Python Computed           NIST Certified      LRE
+----------------------------------------------------------------------------------------
+Between SS                  1.680000000149012e+00    1.680000000000000e+00         
+Within SS                   1.800000000093133e+00    1.800000000000000e+00         
+F Statistic                 2.100000000077609e+01    2.100000000000000e+01     10.4
+----------------------------------------------------------------------------------------
+
+Additional Solvers & Extended Precision Comparison (F-Statistic LRE):
+  scipy_f_oneway        : F LRE =  10.4
+  twopass_centered      : F LRE =  10.4
+  statsmodels_ols       : F LRE =  10.4
+  onepass_textbook      : F LRE =   1.8
+  longdouble_80bit      : F LRE =  13.7
+  decimal_50digit       : F LRE =  15.0

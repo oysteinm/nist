@@ -1,0 +1,36 @@
+NIST StRD Certification Log — Nonlinear Least Squares: MGH 17 (MGH17.dat)
+================================================================================================
+Difficulty          : average
+Observations (N)    : 33
+Parameters (p)      : 5
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             3.754100521969089e-01     3.754100521100000e-01      9.6
+b2             1.935846923656266e+00     1.935846912700000e+00      8.2
+b3            -1.464687147620584e+00    -1.464687136600000e+00      8.1
+b4             1.286753466203211e-02     1.286753464000000e-02      8.8
+b5             2.212269961690180e-02     2.212269966200000e-02      8.7
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             2.072315354940537e-03     2.072315355100000e-03     10.1
+b2             2.203166968460361e-01     2.203166922200000e-01      7.7
+b3             2.217570820089128e-01     2.217570773900000e-01      7.7
+b4             4.486135851350647e-04     4.486135811400000e-04      8.1
+b5             8.947199694695525e-04     8.947199657500000e-04      8.4
+
+Residual Sum of Squares (RSS):
+  Python Computed : 5.464894697482500e-05
+  NIST Certified  : 5.464894697500000e-05
+  LRE (RSS)       : 11.5
+
+Summary Min LRE   : Coef. = 8.1, S.E. = 7.7, RSS = 11.5
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    6.4 S.E.=    5.4 RSS=   11.5
+  trf_3pt_fd            : Coef.=    7.6 S.E.=    6.0 RSS=   11.5
+  mpmath_50digit        : Coef.=   10.8 S.E.=   10.6 RSS=   11.5

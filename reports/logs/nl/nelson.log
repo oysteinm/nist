@@ -1,0 +1,32 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Nelson (Nelson.dat)
+================================================================================================
+Difficulty          : average
+Observations (N)    : 128
+Parameters (p)      : 3
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             2.590683602224476e+00     2.590683602100000e+00     10.3
+b2             5.617771766341889e-09     5.617771702600000e-09      7.9
+b3            -5.770101313320174e-02    -5.770101317400000e-02      9.2
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             1.914999641404008e-02     1.914999641300000e-02     10.3
+b2             6.112409716297543e-09     6.112409654000000e-09      8.0
+b3             3.957236649812406e-03     3.957236654300000e-03      8.9
+
+Residual Sum of Squares (RSS):
+  Python Computed : 3.797683317645148e+00
+  NIST Certified  : 3.797683317600000e+00
+  LRE (RSS)       : 10.9
+
+Summary Min LRE   : Coef. = 7.9, S.E. = 8.0, RSS = 10.9
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    7.4 S.E.=    5.4 RSS=   10.9
+  trf_3pt_fd            : Coef.=    7.4 S.E.=    5.9 RSS=   10.9
+  mpmath_50digit        : Coef.=   10.9 S.E.=   10.6 RSS=   10.9

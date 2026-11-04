@@ -1,0 +1,34 @@
+NIST StRD Certification Log — Nonlinear Least Squares: MGH 09 (MGH09.dat)
+================================================================================================
+Difficulty          : higher
+Observations (N)    : 11
+Parameters (p)      : 4
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             1.928069340087344e-01     1.928069345800000e-01      8.5
+b2             1.912823415438286e-01     1.912823287300000e-01      7.2
+b3             1.230565093385405e-01     1.230565069300000e-01      7.7
+b4             1.360623366146905e-01     1.360623306800000e-01      7.4
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             1.143531241283678e-02     1.143531222700000e-02      7.8
+b2             1.963322192858594e-01     1.963322091100000e-01      7.3
+b3             8.084203426260643e-02     8.084203123200000e-02      7.4
+b4             9.002554616498327e-02     9.002554230800000e-02      7.4
+
+Residual Sum of Squares (RSS):
+  Python Computed : 3.075056038492374e-04
+  NIST Certified  : 3.075056038500000e-04
+  LRE (RSS)       : 11.6
+
+Summary Min LRE   : Coef. = 7.2, S.E. = 7.3, RSS = 11.6
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    7.4 S.E.=    7.0 RSS=   11.6
+  trf_3pt_fd            : Coef.=    7.4 S.E.=    7.4 RSS=   11.6
+  mpmath_50digit        : Coef.=    8.2 S.E.=    8.3 RSS=   11.6

@@ -1,0 +1,20 @@
+NIST StRD Certification Log — One-Way ANOVA: Simon-Lesage 7b (SmLs07b)
+========================================================================================
+Difficulty       : higher
+Observations (N) : 189 (df_between=8, df_within=180)
+Scaled x10       : Yes (Simon-Lesage b-variant)
+
+Statistic                         Python Computed           NIST Certified      LRE
+----------------------------------------------------------------------------------------
+Between SS                  1.680000000000000e+02    1.680000000000000e+02         
+Within SS                   1.800000000000000e+02    1.800000000000000e+02         
+F Statistic                 2.100000000000000e+01    2.100000000000000e+01     15.0
+----------------------------------------------------------------------------------------
+
+Additional Solvers & Extended Precision Comparison (F-Statistic LRE):
+  scipy_f_oneway        : F LRE =  15.0
+  twopass_centered      : F LRE =  15.0
+  statsmodels_ols       : F LRE =   4.0
+  onepass_textbook      : F LRE =   0.0
+  longdouble_80bit      : F LRE =  15.0
+  decimal_50digit       : F LRE =  15.0

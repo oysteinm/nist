@@ -1,0 +1,719 @@
+{
+  "source_url": "https://www.stata.com/support/cert/nist17/",
+  "suites": {
+    "univ": {
+      "tests": [
+        {
+          "test_name": "PiDigits",
+          "difficulty": "lower",
+          "mean": 15.0,
+          "sd": 15.0,
+          "autocorr": 14.9,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/pidigits.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/pidigits.do",
+          "local_do_path": "data/stata17/univ/do/pidigits.do"
+        },
+        {
+          "test_name": "Lottery",
+          "difficulty": "lower",
+          "mean": 15.0,
+          "sd": 15.0,
+          "autocorr": 15.0,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/lottery.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/lottery.do",
+          "local_do_path": "data/stata17/univ/do/lottery.do"
+        },
+        {
+          "test_name": "Lew",
+          "difficulty": "lower",
+          "mean": 15.0,
+          "sd": 15.0,
+          "autocorr": 14.8,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/lew.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/lew.do",
+          "local_do_path": "data/stata17/univ/do/lew.do"
+        },
+        {
+          "test_name": "Mavro",
+          "difficulty": "lower",
+          "mean": 15.0,
+          "sd": 13.1,
+          "autocorr": 13.7,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/mavro.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/mavro.do",
+          "local_do_path": "data/stata17/univ/do/mavro.do"
+        },
+        {
+          "test_name": "Michelson",
+          "difficulty": "lower",
+          "mean": 15.0,
+          "sd": 13.8,
+          "autocorr": 13.4,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/michelso.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/michelso.do",
+          "local_do_path": "data/stata17/univ/do/michelso.do"
+        },
+        {
+          "test_name": "NumAcc-1",
+          "difficulty": "lower",
+          "mean": 15.0,
+          "sd": 15.0,
+          "autocorr": 15.0,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/numacc1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/numacc1.do",
+          "local_do_path": "data/stata17/univ/do/numacc1.do"
+        },
+        {
+          "test_name": "NumAcc-2",
+          "difficulty": "average",
+          "mean": 15.0,
+          "sd": 15.0,
+          "autocorr": 15.0,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/numacc2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/numacc2.do",
+          "local_do_path": "data/stata17/univ/do/numacc2.do"
+        },
+        {
+          "test_name": "NumAcc-3",
+          "difficulty": "average",
+          "mean": 15.0,
+          "sd": 9.5,
+          "autocorr": 11.9,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/numacc3.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/numacc3.do",
+          "local_do_path": "data/stata17/univ/do/numacc3.do"
+        },
+        {
+          "test_name": "NumAcc-4",
+          "difficulty": "higher",
+          "mean": 15.0,
+          "sd": 8.3,
+          "autocorr": 10.7,
+          "log_url": "https://www.stata.com/support/cert/nist17/univariate/log/numacc4.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/univariate/do/numacc4.do",
+          "local_do_path": "data/stata17/univ/do/numacc4.do"
+        }
+      ],
+      "summary": {
+        "average": {
+          "mean": 15.0,
+          "sd": 13.3,
+          "autocorr": 13.8
+        },
+        "minimum": {
+          "mean": 15.0,
+          "sd": 8.3,
+          "autocorr": 10.7
+        },
+        "maximum": {
+          "mean": 15.0,
+          "sd": 15.0,
+          "autocorr": 15.0
+        }
+      }
+    },
+    "lls": {
+      "tests": [
+        {
+          "test_name": "Norris",
+          "difficulty": "lower",
+          "coef": 12.8,
+          "se": 13.5,
+          "rss": 13.3,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/norris.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/norris.do",
+          "local_do_path": "data/stata17/lls/do/norris.do"
+        },
+        {
+          "test_name": "Pontius",
+          "difficulty": "lower",
+          "coef": 11.5,
+          "se": 13.0,
+          "rss": 12.7,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/pontius.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/pontius.do",
+          "local_do_path": "data/stata17/lls/do/pontius.do"
+        },
+        {
+          "test_name": "NoInt-1",
+          "difficulty": "average",
+          "coef": 14.7,
+          "se": 15.0,
+          "rss": 14.9,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/noint1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/noint1.do",
+          "local_do_path": "data/stata17/lls/do/noint1.do"
+        },
+        {
+          "test_name": "NoInt-2",
+          "difficulty": "average",
+          "coef": 15.0,
+          "se": 15.0,
+          "rss": 14.7,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/noint2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/noint2.do",
+          "local_do_path": "data/stata17/lls/do/noint2.do"
+        },
+        {
+          "test_name": "Filippelli",
+          "difficulty": "higher",
+          "coef": null,
+          "se": null,
+          "rss": null,
+          "note": "no full solution(*)",
+          "orthpoly_coef": 8.4,
+          "orthpoly_rss": 8.5,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/fil.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/fil.do",
+          "local_do_path": "data/stata17/lls/do/fil.do"
+        },
+        {
+          "test_name": "Longley",
+          "difficulty": "higher",
+          "coef": 12.1,
+          "se": 12.9,
+          "rss": 13.2,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/longley.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/longley.do",
+          "local_do_path": "data/stata17/lls/do/longley.do"
+        },
+        {
+          "test_name": "Wampler-1",
+          "difficulty": "higher",
+          "coef": 6.9,
+          "se": 15.0,
+          "rss": 15.0,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/wampler1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/wampler1.do",
+          "local_do_path": "data/stata17/lls/do/wampler1.do"
+        },
+        {
+          "test_name": "Wampler-2",
+          "difficulty": "higher",
+          "coef": 10.4,
+          "se": 15.0,
+          "rss": 15.0,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/wampler2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/wampler2.do",
+          "local_do_path": "data/stata17/lls/do/wampler2.do"
+        },
+        {
+          "test_name": "Wampler-3",
+          "difficulty": "higher",
+          "coef": 6.5,
+          "se": 10.8,
+          "rss": 14.1,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/wampler3.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/wampler3.do",
+          "local_do_path": "data/stata17/lls/do/wampler3.do"
+        },
+        {
+          "test_name": "Wampler-4",
+          "difficulty": "higher",
+          "coef": 6.5,
+          "se": 10.8,
+          "rss": 15.0,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/wampler4.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/wampler4.do",
+          "local_do_path": "data/stata17/lls/do/wampler4.do"
+        },
+        {
+          "test_name": "Wampler-5",
+          "difficulty": "higher",
+          "coef": 6.4,
+          "se": 10.8,
+          "rss": 15.0,
+          "note": null,
+          "log_url": "https://www.stata.com/support/cert/nist17/regression/log/wampler5.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/regression/do/wampler5.do",
+          "local_do_path": "data/stata17/lls/do/wampler5.do"
+        }
+      ],
+      "summary": {
+        "average": {
+          "coef": 10.3,
+          "se": 13.2,
+          "rss": 14.3
+        },
+        "minimum": {
+          "coef": 6.4,
+          "se": 10.8,
+          "rss": 12.7
+        },
+        "maximum": {
+          "coef": 15.0,
+          "se": 15.0,
+          "rss": 15.0
+        }
+      }
+    },
+    "anova": {
+      "tests": [
+        {
+          "test_name": "Si Resistivity",
+          "difficulty": "lower",
+          "f_stat": 13.1,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sires.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sires.do",
+          "local_do_path": "data/stata17/anova/do/sires.do"
+        },
+        {
+          "test_name": "Simon-Lesage 1",
+          "difficulty": "lower",
+          "f_stat": 15.0,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl1.do",
+          "local_do_path": "data/stata17/anova/do/sl1.do"
+        },
+        {
+          "test_name": "Simon-Lesage 2",
+          "difficulty": "lower",
+          "f_stat": 13.6,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl2.do",
+          "local_do_path": "data/stata17/anova/do/sl2.do"
+        },
+        {
+          "test_name": "Simon-Lesage 3",
+          "difficulty": "lower",
+          "f_stat": 12.8,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl3.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl3.do",
+          "local_do_path": "data/stata17/anova/do/sl3.do"
+        },
+        {
+          "test_name": "Ag Atomic Wt",
+          "difficulty": "average",
+          "f_stat": 10.2,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/agatom.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/agatom.do",
+          "local_do_path": "data/stata17/anova/do/agatom.do"
+        },
+        {
+          "test_name": "Simon-Lesage 4",
+          "difficulty": "average",
+          "f_stat": 10.4,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl4.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl4.do",
+          "local_do_path": "data/stata17/anova/do/sl4.do"
+        },
+        {
+          "test_name": "Simon-Lesage 5",
+          "difficulty": "average",
+          "f_stat": 10.2,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl5.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl5.do",
+          "local_do_path": "data/stata17/anova/do/sl5.do"
+        },
+        {
+          "test_name": "Simon-Lesage 6",
+          "difficulty": "average",
+          "f_stat": 10.2,
+          "starred": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl6.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl6.do",
+          "local_do_path": "data/stata17/anova/do/sl6.do"
+        },
+        {
+          "test_name": "Simon-Lesage 7",
+          "difficulty": "higher",
+          "f_stat": 4.4,
+          "starred": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl7.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl7.do",
+          "local_do_path": "data/stata17/anova/do/sl7.do"
+        },
+        {
+          "test_name": "Simon-Lesage 7b",
+          "difficulty": "higher",
+          "f_stat": 15.0,
+          "starred": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl7b.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl7b.do",
+          "local_do_path": "data/stata17/anova/do/sl7b.do"
+        },
+        {
+          "test_name": "Simon-Lesage 8",
+          "difficulty": "higher",
+          "f_stat": 4.3,
+          "starred": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl8.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl8.do",
+          "local_do_path": "data/stata17/anova/do/sl8.do"
+        },
+        {
+          "test_name": "Simon-Lesage 8b",
+          "difficulty": "higher",
+          "f_stat": 15.0,
+          "starred": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl8b.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl8b.do",
+          "local_do_path": "data/stata17/anova/do/sl8b.do"
+        },
+        {
+          "test_name": "Simon-Lesage 9",
+          "difficulty": "higher",
+          "f_stat": 4.2,
+          "starred": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl9.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl9.do",
+          "local_do_path": "data/stata17/anova/do/sl9.do"
+        },
+        {
+          "test_name": "Simon-Lesage 9b",
+          "difficulty": "higher",
+          "f_stat": 15.0,
+          "starred": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/anova/log/sl9b.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/anova/do/sl9b.do",
+          "local_do_path": "data/stata17/anova/do/sl9b.do"
+        }
+      ],
+      "summary": {
+        "average": {
+          "f_stat": 12.8
+        },
+        "minimum": {
+          "f_stat": 10.2
+        },
+        "maximum": {
+          "f_stat": 15.0
+        }
+      }
+    },
+    "nls": {
+      "tests": [
+        {
+          "test_name": "Misra 1a",
+          "difficulty": "lower",
+          "coef": 9.4,
+          "se": 6.4,
+          "rss": 10.5,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/misra1a.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/misra1a.do",
+          "local_do_path": "data/stata17/nls/do/misra1a.do"
+        },
+        {
+          "test_name": "Chwirut 2",
+          "difficulty": "lower",
+          "coef": 8.0,
+          "se": 6.3,
+          "rss": 11.2,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/chwirut2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/chwirut2.do",
+          "local_do_path": "data/stata17/nls/do/chwirut2.do"
+        },
+        {
+          "test_name": "Chwirut 1",
+          "difficulty": "lower",
+          "coef": 7.6,
+          "se": 6.3,
+          "rss": 11.4,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/chwirut1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/chwirut1.do",
+          "local_do_path": "data/stata17/nls/do/chwirut1.do"
+        },
+        {
+          "test_name": "Lanczos 3",
+          "difficulty": "lower",
+          "coef": 7.2,
+          "se": 6.0,
+          "rss": 10.6,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/lanczos3.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/lanczos3.do",
+          "local_do_path": "data/stata17/nls/do/lanczos3.do"
+        },
+        {
+          "test_name": "Gauss 1",
+          "difficulty": "lower",
+          "coef": 8.5,
+          "se": 6.3,
+          "rss": 11.6,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/gauss1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/gauss1.do",
+          "local_do_path": "data/stata17/nls/do/gauss1.do"
+        },
+        {
+          "test_name": "Gauss 2",
+          "difficulty": "lower",
+          "coef": 8.2,
+          "se": 5.9,
+          "rss": 10.6,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/gauss2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/gauss2.do",
+          "local_do_path": "data/stata17/nls/do/gauss2.do"
+        },
+        {
+          "test_name": "Daniel Wood",
+          "difficulty": "lower",
+          "coef": 8.6,
+          "se": 6.2,
+          "rss": 11.7,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/dwood.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/dwood.do",
+          "local_do_path": "data/stata17/nls/do/dwood.do"
+        },
+        {
+          "test_name": "Misra 1b",
+          "difficulty": "lower",
+          "coef": 9.9,
+          "se": 6.5,
+          "rss": 11.3,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/misra1b.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/misra1b.do",
+          "local_do_path": "data/stata17/nls/do/misra1b.do"
+        },
+        {
+          "test_name": "Kirby 2",
+          "difficulty": "average",
+          "coef": 8.0,
+          "se": 6.3,
+          "rss": 11.6,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/kirby2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/kirby2.do",
+          "local_do_path": "data/stata17/nls/do/kirby2.do"
+        },
+        {
+          "test_name": "Hahn 1",
+          "difficulty": "average",
+          "coef": 7.1,
+          "se": 5.1,
+          "rss": 10.6,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/hahn1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/hahn1.do",
+          "local_do_path": "data/stata17/nls/do/hahn1.do"
+        },
+        {
+          "test_name": "Nelson",
+          "difficulty": "average",
+          "coef": 7.1,
+          "se": 5.2,
+          "rss": 10.9,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/nelson.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/nelson.do",
+          "local_do_path": "data/stata17/nls/do/nelson.do"
+        },
+        {
+          "test_name": "MGH 17",
+          "difficulty": "average",
+          "coef": 7.0,
+          "se": 6.1,
+          "rss": 11.5,
+          "used_start2": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/mgh17.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/mgh17.do",
+          "local_do_path": "data/stata17/nls/do/mgh17.do"
+        },
+        {
+          "test_name": "Lanczos 1",
+          "difficulty": "average",
+          "coef": 10.6,
+          "se": 3.3,
+          "rss": 3.0,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/lanczos1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/lanczos1.do",
+          "local_do_path": "data/stata17/nls/do/lanczos1.do"
+        },
+        {
+          "test_name": "Lanczos 2",
+          "difficulty": "average",
+          "coef": 7.9,
+          "se": 5.4,
+          "rss": 10.1,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/lanczos2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/lanczos2.do",
+          "local_do_path": "data/stata17/nls/do/lanczos2.do"
+        },
+        {
+          "test_name": "Gauss 3",
+          "difficulty": "average",
+          "coef": 8.2,
+          "se": 5.5,
+          "rss": 11.0,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/gauss3.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/gauss3.do",
+          "local_do_path": "data/stata17/nls/do/gauss3.do"
+        },
+        {
+          "test_name": "Misra 1c",
+          "difficulty": "average",
+          "coef": 9.7,
+          "se": 6.5,
+          "rss": 11.1,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/misra1c.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/misra1c.do",
+          "local_do_path": "data/stata17/nls/do/misra1c.do"
+        },
+        {
+          "test_name": "Misra 1d",
+          "difficulty": "average",
+          "coef": 9.3,
+          "se": 6.5,
+          "rss": 11.2,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/misra1d.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/misra1d.do",
+          "local_do_path": "data/stata17/nls/do/misra1d.do"
+        },
+        {
+          "test_name": "Roszman 1",
+          "difficulty": "average",
+          "coef": 7.4,
+          "se": 6.4,
+          "rss": 12.2,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/roszman1.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/roszman1.do",
+          "local_do_path": "data/stata17/nls/do/roszman1.do"
+        },
+        {
+          "test_name": "ENSO",
+          "difficulty": "average",
+          "coef": 4.7,
+          "se": 5.3,
+          "rss": 11.3,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/enso.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/enso.do",
+          "local_do_path": "data/stata17/nls/do/enso.do"
+        },
+        {
+          "test_name": "MGH 09",
+          "difficulty": "higher",
+          "coef": 7.0,
+          "se": 6.5,
+          "rss": 11.6,
+          "used_start2": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/mgh09.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/mgh09.do",
+          "local_do_path": "data/stata17/nls/do/mgh09.do"
+        },
+        {
+          "test_name": "Thurber",
+          "difficulty": "higher",
+          "coef": 6.5,
+          "se": 5.4,
+          "rss": 11.3,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/thurber.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/thurber.do",
+          "local_do_path": "data/stata17/nls/do/thurber.do"
+        },
+        {
+          "test_name": "BoxBOD",
+          "difficulty": "higher",
+          "coef": 7.3,
+          "se": 6.7,
+          "rss": 10.4,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/boxbod.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/boxbod.do",
+          "local_do_path": "data/stata17/nls/do/boxbod.do"
+        },
+        {
+          "test_name": "Ratkowsky 2",
+          "difficulty": "higher",
+          "coef": 7.6,
+          "se": 6.0,
+          "rss": 11.8,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/ratkow2.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/ratkow2.do",
+          "local_do_path": "data/stata17/nls/do/ratkow2.do"
+        },
+        {
+          "test_name": "MGH 10",
+          "difficulty": "higher",
+          "coef": 7.7,
+          "se": 4.7,
+          "rss": 11.4,
+          "used_start2": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/mgh10.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/mgh10.do",
+          "local_do_path": "data/stata17/nls/do/mgh10.do"
+        },
+        {
+          "test_name": "Eckerle4",
+          "difficulty": "higher",
+          "coef": 8.3,
+          "se": 6.4,
+          "rss": 10.7,
+          "used_start2": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/eckerle4.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/eckerle4.do",
+          "local_do_path": "data/stata17/nls/do/eckerle4.do"
+        },
+        {
+          "test_name": "Ratkowsky 3",
+          "difficulty": "higher",
+          "coef": 6.0,
+          "se": 5.0,
+          "rss": 11.4,
+          "used_start2": true,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/ratkow3.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/ratkow3.do",
+          "local_do_path": "data/stata17/nls/do/ratkow3.do"
+        },
+        {
+          "test_name": "Bennett 5",
+          "difficulty": "higher",
+          "coef": 6.4,
+          "se": 5.9,
+          "rss": 11.0,
+          "used_start2": false,
+          "log_url": "https://www.stata.com/support/cert/nist17/nl/log/benn5.log",
+          "do_url": "https://www.stata.com/support/cert/nist17/nl/do/benn5.do",
+          "local_do_path": "data/stata17/nls/do/benn5.do"
+        }
+      ],
+      "summary": {
+        "average": {
+          "coef": 7.8,
+          "se": 5.8,
+          "rss": 10.9
+        },
+        "minimum": {
+          "coef": 4.7,
+          "se": 3.3,
+          "rss": 3.0
+        },
+        "maximum": {
+          "coef": 10.6,
+          "se": 6.7,
+          "rss": 12.2
+        }
+      }
+    }
+  }
+}

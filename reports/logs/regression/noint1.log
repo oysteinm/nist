@@ -1,0 +1,29 @@
+NIST StRD Certification Log — Linear Regression: NoInt-1 (NoInt1.dat)
+================================================================================================
+Difficulty          : average
+Observations (N)    : 11
+Parameters (p)      : 1 (Intercept=No)
+Condition Number    : 1.000000e+00
+
+Primary Run — Coefficients (Column-Pivoted QR, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+B1             2.074380165289256e+00     2.074380165289260e+00     14.7
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+B1             1.652892561983470e-02     1.652892561983470e-02     15.0
+
+Residual Sum of Squares (RSS):
+  Python Computed : 1.272727272727272e+02
+  NIST Certified  : 1.272727272727270e+02
+  LRE (RSS)       : 14.9
+
+Summary Min LRE   : Coef. = 14.7, S.E. = 15.0, RSS = 14.9
+
+Additional Solvers & Extended Precision Comparison (Min LRE):
+  statsmodels_qr        : Coef.= 14.7  S.E.= 15.0  RSS= 14.9
+  statsmodels_pinv      : Coef.= 14.7  S.E.= 15.0  RSS= 14.9
+  normal_equations      : Coef.= 14.7  S.E.= 15.0  RSS= 14.9
+  mpmath_50digit        : Coef.= 14.7  S.E.= 15.0  RSS= 14.7

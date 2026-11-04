@@ -1,0 +1,32 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Chwirut 2 (Chwirut2.dat)
+================================================================================================
+Difficulty          : lower
+Observations (N)    : 54
+Parameters (p)      : 3
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             1.665766653578167e-01     1.665766653700000e-01     10.1
+b2             5.165329128430994e-03     5.165329128600000e-03     10.5
+b3             1.215000709620125e-02     1.215000709600000e-02     10.8
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             3.830328680943167e-02     3.830328681000000e-02     10.8
+b2             6.662160512696244e-04     6.662160512600000e-04     10.8
+b3             1.530423476687904e-03     1.530423476700000e-03     11.1
+
+Residual Sum of Squares (RSS):
+  Python Computed : 5.130480294068652e+02
+  NIST Certified  : 5.130480294100000e+02
+  LRE (RSS)       : 11.2
+
+Summary Min LRE   : Coef. = 10.1, S.E. = 10.8, RSS = 11.2
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    9.1 S.E.=    5.6 RSS=   11.2
+  trf_3pt_fd            : Coef.=    8.7 S.E.=    6.2 RSS=   11.2
+  mpmath_50digit        : Coef.=   10.9 S.E.=   11.0 RSS=   11.2

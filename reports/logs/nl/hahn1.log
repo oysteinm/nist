@@ -1,0 +1,40 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Hahn 1 (Hahn1.dat)
+================================================================================================
+Difficulty          : average
+Observations (N)    : 236
+Parameters (p)      : 7
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1             1.077635152180296e+00     1.077635173300000e+00      7.7
+b2            -1.226929675698536e-01    -1.226929692100000e-01      7.9
+b3             4.086375028023284e-03     4.086375061000000e-03      8.1
+b4            -1.426266202831361e-06    -1.426266251400000e-06      7.5
+b5            -5.760994104178728e-03    -5.760994090100000e-03      8.6
+b6             2.405373536125869e-04     2.405373550300000e-04      8.2
+b7            -1.231444997120182e-07    -1.231445019900000e-07      7.7
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             1.707015468434692e-01     1.707015474200000e-01      8.5
+b2             1.200028913774937e-02     1.200028918900000e-02      8.4
+b3             2.250831482583865e-04     2.250831493700000e-04      8.3
+b4             2.757803760366204e-07     2.757803766600000e-07      8.6
+b5             2.471288817345517e-04     2.471288821900000e-04      8.7
+b6             1.044937371659180e-05     1.044937376800000e-05      8.3
+b7             1.302733529215938e-08     1.302733532700000e-08      8.6
+
+Residual Sum of Squares (RSS):
+  Python Computed : 1.532438285360623e+00
+  NIST Certified  : 1.532438285400000e+00
+  LRE (RSS)       : 10.6
+
+Summary Min LRE   : Coef. = 7.5, S.E. = 8.3, RSS = 10.6
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    2.2 S.E.=    0.4 RSS=    5.3
+  trf_3pt_fd            : Coef.=  (0.2) S.E.=  (0.0) RSS=  (0.4)
+  mpmath_50digit        : Coef.=   10.8 S.E.=   10.5 RSS=   10.6

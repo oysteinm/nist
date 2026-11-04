@@ -1,0 +1,32 @@
+NIST StRD Certification Log — Nonlinear Least Squares: Bennett 5 (Bennett5.dat)
+================================================================================================
+Difficulty          : higher
+Observations (N)    : 154
+Parameters (p)      : 3
+Starting Values Used: Start 1
+
+Primary Run — Parameter Estimates (LM + Complex-Step Jacobian, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+b1            -2.523505804301981e+03    -2.523505804300000e+03     12.1
+b2             4.673656464356498e+01     4.673656464400000e+01     11.0
+b3             9.321848319331204e-01     9.321848319300000e-01     11.5
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+b1             2.971517541082566e+02     2.971517541100000e+02     11.2
+b2             1.244887185549520e+00     1.244887185600000e+00     10.4
+b3             2.027229937818173e-02     2.027229937800000e-02     11.0
+
+Residual Sum of Squares (RSS):
+  Python Computed : 5.240474407263257e-04
+  NIST Certified  : 5.240474407300001e-04
+  LRE (RSS)       : 11.2
+
+Summary Min LRE   : Coef. = 11.0, S.E. = 10.4, RSS = 11.2
+
+Additional Solvers & Extended Precision Comparison:
+  lm_2pt_fd             : Coef.=    5.8 S.E.=    5.0 RSS=   11.2
+  trf_3pt_fd            : Coef.=    7.7 S.E.=    7.7 RSS=   11.2
+  mpmath_50digit        : Coef.=   11.0 S.E.=   10.4 RSS=   11.2

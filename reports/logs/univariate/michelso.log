@@ -1,0 +1,17 @@
+NIST StRD Certification Log — Univariate Summary Statistics: Michelson (Michelso.dat)
+========================================================================================
+Difficulty       : lower
+Observations (N) : 100
+
+Primary Run (float64 numpy/statsmodels):
+Statistic                             Python Computed           NIST Certified      LRE
+----------------------------------------------------------------------------------------
+Sample Mean                     2.998524000000000e+02    2.998524000000000e+02     15.0
+Sample Std. Dev. (N-1)          7.901054781905067e-02    7.901054781905180e-02     13.8
+Lag-1 Autocorrelation r(1)      5.351996686212632e-01    5.351996686212830e-01     13.4
+----------------------------------------------------------------------------------------
+
+Additional Methods Comparison (LRE):
+  onepass_float64       : mean= 15.0  S.D.=  8.6  r(1)=  8.3
+  longdouble_80bit      : mean= 15.0  S.D.= 15.0  r(1)= 15.0
+  decimal_50digit       : mean= 15.0  S.D.= 15.0  r(1)= 15.0

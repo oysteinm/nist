@@ -1,0 +1,290 @@
+
+/* NIST/ITL StRD benchmark 
+   *** MODIFIED by William Gould, StataCorp.
+   ***
+   *** The dependent variable in the original test had values such as 
+   *** as 1000000000000.4, 1000000000000.3, etc. These numbers cannot be 
+   *** stored on a binary computer with more than 4 digits of accuracy.  
+   *** E.g., in double precision, 
+   ***
+   ***      1000000000000.4 - 1000000000000 = .40002441...
+   ***
+   *** That is, you might enter 1000000000000.4, but a double-precision binary
+   *** computer actually stores the number 1000000000000.40002441...
+   ***
+   *** Thus, even a perfectly accurate ANOVA routine could not obtain the 
+   *** the results the authors intended because, at the instant the data was
+   *** stored, numbers were rounded.  The test, as given, amounts to a test 
+   *** of whether data is being stored in better than binary double precision.
+   ***
+   *** The intention of the test, I believe, was to determine if the ANOVA 
+   *** routine could deal with numbers that varied only in their trailing 
+   *** digits.
+   ***
+   *** Thus, the test is modified as follows:
+   ***
+   ***      1)  y is multiplied by 10.  What was previously 1000000000000.4 
+   ***          now becomes 10000000000004, a number that a digital computer
+   ***          can store accurately in double precision.
+   ***
+   ***      2)  All results should now be as the authors originally expect 
+   ***          except sums of squares of y will be multiplied by 100 and 
+   ***          the root mean square error will be mutliplied by 10.
+   ***
+   *** The remaining comments below, from the NIST data, are not modified.
+
+ANOVA
+
+Difficulty=Higher  n_i=21  k=9  Generated
+
+Dataset Name:   Simon-Lesage7   (Simon-Lesage7.dat)
+
+
+Procedure:      Analysis of Variance
+
+
+Reference:      Simon, Stephen D. and Lesage, James P. (1989).
+                "Assessing the Accuracy of ANOVA Calculations in
+                Statistical Software".
+                Computational Statistics & Data Analysis, 8, pp. 325-332.
+
+
+Data:           1 Factor
+                9 Treatments
+                21 Replicates/Cell
+                189 Observations
+                13 Constant Leading Digits
+                Higher Level of Difficulty
+                Generated Data
+
+
+Model:          10 Parameters (mu,tau_1, ... , tau_9)
+                y_{ij} = mu + tau_i + epsilon_{ij}
+
+
+Certified Values:
+
+Source of                  Sums of               Mean
+Variation          df      Squares              Squares            F Statistic
+
+Between Treatment   8 1.68000000000000E+00 2.10000000000000E-01
+2.10000000000000E+01
+Within Treatment  180 1.80000000000000E+00 1.00000000000000E-02
+
+                  Certified R-Squared 4.82758620689655E-01
+
+                  Certified Residual
+                  Standard Deviation  1.00000000000000E-01
+*/
+
+clear
+
+scalar N         = 189
+scalar df_r      = 180
+scalar df_m      = 8
+
+scalar mss       = 168
+scalar F         = 21
+scalar rss       = 180
+scalar r2        = 4.82758620689655E-01
+scalar rmse      = 1
+
+qui input byte treat double resp
+           1    10000000000004
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           1    10000000000003
+           1    10000000000005
+           2    10000000000003
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           2    10000000000002
+           2    10000000000004
+           3    10000000000005
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           3    10000000000004
+           3    10000000000006
+           4    10000000000003
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           4    10000000000002
+           4    10000000000004
+           5    10000000000005
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           5    10000000000004
+           5    10000000000006
+           6    10000000000003
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           6    10000000000002
+           6    10000000000004
+           7    10000000000005
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           7    10000000000004
+           7    10000000000006
+           8    10000000000003
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           8    10000000000002
+           8    10000000000004
+           9    10000000000005
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+           9    10000000000004
+           9    10000000000006
+end
+
+anova resp treat
+
+assert N    == e(N)
+assert df_r == e(df_r)
+assert df_m == e(df_m)
+
+lrecomp e(F) F e(rmse) rmse e(r2) r2 e(mss) mss e(rss) rss

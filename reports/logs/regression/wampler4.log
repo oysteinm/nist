@@ -1,0 +1,39 @@
+NIST StRD Certification Log — Linear Regression: Wampler-4 (Wampler4.dat)
+================================================================================================
+Difficulty          : higher
+Observations (N)    : 21
+Parameters (p)      : 6 (Intercept=Yes)
+Condition Number    : 6.398930e+06
+
+Primary Run — Coefficients (Column-Pivoted QR, float64):
+Param                Python Estimate            NIST Certified      LRE
+------------------------------------------------------------------------
+B0             9.999999993430353e-01     1.000000000000000e+00      9.2
+B1             1.000000002170578e+00     1.000000000000000e+00      8.7
+B2             9.999999990987615e-01     1.000000000000000e+00      9.0
+B3             1.000000000128846e+00     1.000000000000000e+00      9.9
+B4             9.999999999925214e-01     1.000000000000000e+00     11.1
+B5             1.000000000000151e+00     1.000000000000000e+00     12.8
+
+Primary Run — Standard Errors:
+Param                    Python S.E.       NIST Certified S.E.      LRE
+------------------------------------------------------------------------
+B0             2.152326246781820e+05     2.152326246781700e+05     13.3
+B1             2.363551734696984e+05     2.363551734696810e+05     13.1
+B2             7.793435243316325e+04     7.793435243315830e+04     13.2
+B3             1.014755075503551e+04     1.014755075503500e+04     13.3
+B4             5.645665121707781e+02     5.645665121707520e+02     13.3
+B5             1.123248546793167e+01     1.123248546793120e+01     13.4
+
+Residual Sum of Squares (RSS):
+  Python Computed : 8.355426800000000e+11
+  NIST Certified  : 8.355426800000000e+11
+  LRE (RSS)       : 15.0
+
+Summary Min LRE   : Coef. = 8.7, S.E. = 13.1, RSS = 15.0
+
+Additional Solvers & Extended Precision Comparison (Min LRE):
+  statsmodels_qr        : Coef.=  7.7  S.E.= 10.4  RSS= 15.0
+  statsmodels_pinv      : Coef.=  7.7  S.E.=  9.8  RSS= 15.0
+  normal_equations      : Coef.=  6.2  S.E.= 10.5  RSS= 15.0
+  mpmath_50digit        : Coef.= 15.0  S.E.= 14.5  RSS= 15.0

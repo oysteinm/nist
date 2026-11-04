@@ -1,0 +1,17 @@
+NIST StRD Certification Log — Univariate Summary Statistics: Mavro (Mavro.dat)
+========================================================================================
+Difficulty       : lower
+Observations (N) : 50
+
+Primary Run (float64 numpy/statsmodels):
+Statistic                             Python Computed           NIST Certified      LRE
+----------------------------------------------------------------------------------------
+Sample Mean                     2.001856000000000e+00    2.001856000000000e+00     15.0
+Sample Std. Dev. (N-1)          4.291234540030854e-04    4.291234540030530e-04     13.1
+Lag-1 Autocorrelation r(1)      9.379891834382403e-01    9.379891834382480e-01     14.1
+----------------------------------------------------------------------------------------
+
+Additional Methods Comparison (LRE):
+  onepass_float64       : mean= 15.0  S.D.=  8.2  r(1)=  7.9
+  longdouble_80bit      : mean= 15.0  S.D.= 15.0  r(1)= 15.0
+  decimal_50digit       : mean= 15.0  S.D.= 15.0  r(1)= 15.0

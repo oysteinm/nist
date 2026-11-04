@@ -1,0 +1,20 @@
+NIST StRD Certification Log — One-Way ANOVA: Si Resistivity (SiRstv)
+========================================================================================
+Difficulty       : lower
+Observations (N) : 25 (df_between=4, df_within=20)
+Scaled x10       : No
+
+Statistic                         Python Computed           NIST Certified      LRE
+----------------------------------------------------------------------------------------
+Between SS                  5.114626159999952e-02    5.114626160000000e-02         
+Within SS                   2.166365600000165e-01    2.166365600000000e-01         
+F Statistic                 1.180462374402447e+00    1.180462374402550e+00     13.1
+----------------------------------------------------------------------------------------
+
+Additional Solvers & Extended Precision Comparison (F-Statistic LRE):
+  scipy_f_oneway        : F LRE =  13.1
+  twopass_centered      : F LRE =  13.1
+  statsmodels_ols       : F LRE =  13.1
+  onepass_textbook      : F LRE =   9.5
+  longdouble_80bit      : F LRE =  14.7
+  decimal_50digit       : F LRE =  14.7

@@ -1,0 +1,17 @@
+NIST StRD Certification Log — Univariate Summary Statistics: Lottery (Lottery.dat)
+========================================================================================
+Difficulty       : lower
+Observations (N) : 218
+
+Primary Run (float64 numpy/statsmodels):
+Statistic                             Python Computed           NIST Certified      LRE
+----------------------------------------------------------------------------------------
+Sample Mean                     5.189587155963303e+02    5.189587155963300e+02     15.0
+Sample Std. Dev. (N-1)          2.916997274709691e+02    2.916997274709690e+02     15.0
+Lag-1 Autocorrelation r(1)     -1.209486229673928e-01   -1.209486229673930e-01     14.9
+----------------------------------------------------------------------------------------
+
+Additional Methods Comparison (LRE):
+  onepass_float64       : mean= 15.0  S.D.= 15.0  r(1)= 15.0
+  longdouble_80bit      : mean= 15.0  S.D.= 15.0  r(1)= 14.9
+  decimal_50digit       : mean= 15.0  S.D.= 15.0  r(1)= 14.9
